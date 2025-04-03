@@ -1,5 +1,6 @@
 {
-  "name": "tailwind-plus-transmit",
+  "name": "trash-website",
+  "description": "Trash content website by Floss Uzbekistan community",
   "version": "0.1.0",
   "private": true,
   "scripts": {
