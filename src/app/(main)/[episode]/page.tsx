@@ -8,6 +8,14 @@ import { PauseIcon } from '@/components/PauseIcon'
 import { PlayIcon } from '@/components/PlayIcon'
 import { getAllEpisodes } from '@/lib/episodes'
 
+export async function generateStaticParams() {
+  const episodes = await getAllEpisodes()
+
+  return episodes.map((ep) => ({
+    episode: ep.id.toString(),
+  }))
+}
+
 const getEpisode = cache(async (id: string) => {
   let allEpisodes = await getAllEpisodes()
   let episode = allEpisodes.find((episode) => episode.id.toString() === id)

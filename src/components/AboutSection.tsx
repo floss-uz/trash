@@ -15,7 +15,7 @@ export function AboutSection(props: React.ComponentPropsWithoutRef<'section'>) {
           colors={['fill-violet-300', 'fill-pink-300']}
           className="h-2.5 w-2.5"
         />
-        <span className="ml-2.5">About</span>
+        <span className="ml-2.5">Ma'lumot</span>
       </h2>
       <p
         className={clsx(

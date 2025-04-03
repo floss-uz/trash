@@ -24,7 +24,7 @@ in
     version = manifest.version;
 
     src = ./.;
-    npmDepsHash = "sha256-Py1Wy5eRezOdZWQGJAP3B23WYcQLcktcPYhKXjHf2XE=";
+    npmDepsHash = "sha256-PEM9giBsN0/RzCnW+88o4n8u5U+vy27YUlu5OnYEigo=";
 
     prePatch = ''
       sed -i.bak "s/output: 'export',/output: 'standalone',/" next.config.mjs

@@ -16,9 +16,11 @@ in
 
     nativeBuildInputs = with pkgs; [
       # Typescript
+      deno
       nodejs
       pnpm
       corepack
+      eslint
       nodePackages.typescript
       nodePackages.typescript-language-server
 
