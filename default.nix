@@ -40,9 +40,11 @@ in
     ];
 
     buildInputs = with pkgs; [
-      openssl
       vips
+      openssl
     ];
+
+    NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
     meta = with pkgs.lib; {
       homepage = "https://trash.floss.uz";
