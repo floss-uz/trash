@@ -52,7 +52,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
 
       - name: Build website
-        run: nix develop --command zsh --command "npm run dev"
+        run: nix develop --command bash --command "npm run dev"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
