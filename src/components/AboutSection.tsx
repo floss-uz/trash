@@ -23,11 +23,14 @@ export function AboutSection(props: React.ComponentPropsWithoutRef<'section'>) {
           !isExpanded && 'lg:line-clamp-4',
         )}
       >
-        In this show, Eric and Wes dig deep to get to the facts with guests who
-        have been labeled villains by a society quick to judge, without actually
-        getting the full story. Tune in every Thursday to get to the truth with
-        another misunderstood outcast as they share the missing context in their
-        tragic tale.
+        Biz ishonamizki, xatolardan saboq chiqarish – yuksalishning eng muhim
+        yo'llaridan biri. O'zbek Open Source hamjamiyatining faol a'zolari
+        sifatida, O'zbekistonlik IT hamkasblarimizning ba'zan uchrab turadigan
+        nomaqbul yoki sifatsiz postlarini bu yerga yig'ib, ularning sabablarini
+        birgalikda o'rganamiz. Maqsadimiz – bu tajribadan foydalanib, nafaqat
+        O'zbek Open Source hamjamiyatidagi muloqotni yaxshilash, balki kengroq
+        miqyosda – butun O'zbekiston IT ekotizimida sog'lom va professional
+        muhitni rivojlantirishdir
       </p>
       {!isExpanded && (
         <button

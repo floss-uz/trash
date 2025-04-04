@@ -29,7 +29,7 @@ export default function MainLayout({
 }: {
   children: React.ReactNode
 }) {
-  let hosts = ["Floss O'zbekistan", "Nodirbek No'monov"]
+  let hosts = ["Floss O'zbekistan", "Nodirbek No'monov", 'Ahmad Qodirov']
 
   return (
     <AudioProvider>
@@ -68,7 +68,7 @@ export default function MainLayout({
           </Link>
           <div className="mt-10 text-center lg:mt-12 lg:text-left">
             <p className="text-xl font-bold text-slate-900">
-              <Link href="/">Uyat taxtasi</Link>
+              <Link href="/">Uyat Taxtasi</Link>
             </p>
             <p className="mt-3 text-lg/8 font-medium text-slate-700">
               Bizning o'zbek dasturchi segmentida yozilgan uyatli postlar
@@ -90,7 +90,13 @@ export default function MainLayout({
               className="mt-4 flex justify-center gap-10 text-base/7 font-medium text-slate-700 sm:gap-8 lg:flex-col lg:gap-4"
             >
               {(
-                [['Telegram Kanal', OvercastIcon, 'https://t.me/']] as const
+                [
+                  [
+                    'Telegram Kanal',
+                    OvercastIcon,
+                    'https://t.me/trash_elonlar',
+                  ],
+                ] as const
               ).map(([label, Icon, link]) => (
                 <li key={label} className="flex">
                   <Link
