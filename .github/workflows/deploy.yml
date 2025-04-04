@@ -27,8 +27,8 @@ jobs:
       - name: Install Nix on da machine
         uses: DeterminateSystems/nix-installer-action@main
 
-      # - name: Build website
-      #   run: nix build .
+      - name: Build website
+        run: nix build .
 
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
