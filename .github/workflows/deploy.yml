@@ -29,11 +29,11 @@ jobs:
 
       - name: Build website
         continue-on-error: true
-        run: nix build .
+        run: nix build . > build.log
 
       - name: Show error outputs
         continue-on-error: true
-        run: nix log /nix/store/6l17fadr768x5wzibz11afhpr9612rd3-trash-website-0.1.0.drv
+        run: cat build.log | grep "nix log" | eval
 
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
