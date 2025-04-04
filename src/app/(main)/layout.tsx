@@ -72,7 +72,7 @@ export default function MainLayout({
           </Link>
           <div className="mt-10 text-center lg:mt-12 lg:text-left">
             <p className="text-xl font-bold text-slate-900">
-              <Link href="/">Trashsiton</Link>
+              <Link href="/">Trashiston</Link>
             </p>
             <p className="mt-3 text-lg/8 font-medium text-slate-700">
               O'zbek dasturchilari tomonidan yozilgan trash postlar to'plami.
