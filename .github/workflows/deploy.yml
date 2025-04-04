@@ -29,7 +29,7 @@ jobs:
 
       - name: Build website
         continue-on-error: true
-        run: nix build . > build.log
+        run: nix -L --print-build-logs build > build.log
 
       - name: Show error outputs
         continue-on-error: true
