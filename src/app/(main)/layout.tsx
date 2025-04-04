@@ -29,7 +29,7 @@ export default function MainLayout({
 }: {
   children: React.ReactNode
 }) {
-  let hosts = ["Floss O'zbekistan", "Nodirbek No'monov", 'Ahmad Qodirov']
+  let hosts = ["Floss O'zbekistan", '0xC0FFEE', 'Ahmad Qodirov']
 
   return (
     <AudioProvider>
