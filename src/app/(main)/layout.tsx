@@ -29,21 +29,25 @@ export default function MainLayout({
 }: {
   children: React.ReactNode
 }) {
-  let hosts = ["Floss O'zbekistan", '0xC0FFEE', 'Ahmad Qodirov']
+  let hosts = [
+    ["Floss O'zbekistan", 'https://floss.uz'],
+    ['0xC0FFEE', 'https://floss.uz/about#maintainers'],
+    ['Ahmad Qodirov', 'https://floss.uz/about#maintainers'],
+  ]
 
   return (
     <AudioProvider>
       <header className="bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-112 lg:items-start lg:overflow-y-auto xl:w-120">
         <div className="hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:px-12 lg:text-sm/7 lg:whitespace-nowrap lg:[writing-mode:vertical-rl]">
           <span className="mb-6 flex gap-6 font-bold text-slate-900">
-            {hosts.map((host, hostIndex) => (
-              <Fragment key={host}>
+            {hosts.map(([name, link], hostIndex) => (
+              <Fragment key={name}>
                 {hostIndex !== 0 && (
                   <span aria-hidden="true" className="text-slate-400">
                     /
                   </span>
                 )}
-                {host}
+                <Link href={link}>{name}</Link>
               </Fragment>
             ))}
           </span>
@@ -68,11 +72,10 @@ export default function MainLayout({
           </Link>
           <div className="mt-10 text-center lg:mt-12 lg:text-left">
             <p className="text-xl font-bold text-slate-900">
-              <Link href="/">Trashiston</Link>
+              <Link href="/">Trashsiton</Link>
             </p>
             <p className="mt-3 text-lg/8 font-medium text-slate-700">
-              Bizning o'zbek dasturchi segmentida yozilgan uyatli postlar
-              to'plami.
+              O'zbek dasturchilari tomonidan yozilgan trash postlar to'plami.
             </p>
           </div>
           <AboutSection className="mt-12 hidden lg:block" />
@@ -121,17 +124,17 @@ export default function MainLayout({
           <AboutSection />
           <h2 className="mt-8 flex items-center font-mono text-sm/7 font-medium text-slate-900">
             <PersonIcon className="h-3 w-auto fill-slate-300" />
-            <span className="ml-2.5">Taqdim etishdi.</span>
+            <span className="ml-2.5">Taqdim etishdi:</span>
           </h2>
           <div className="mt-2 flex gap-6 text-sm/7 font-bold text-slate-900">
-            {hosts.map((host, hostIndex) => (
-              <Fragment key={host}>
+            {hosts.map(([name, link], hostIndex) => (
+              <Fragment key={name}>
                 {hostIndex !== 0 && (
                   <span aria-hidden="true" className="text-slate-400">
                     /
                   </span>
                 )}
-                {host}
+                <Link href={link}>{name}</Link>
               </Fragment>
             ))}
           </div>
