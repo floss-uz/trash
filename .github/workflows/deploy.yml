@@ -30,6 +30,9 @@ jobs:
       - name: Build website
         run: nix build .
 
+      - name: Show error outputs
+        run: nix log /nix/store/6l17fadr768x5wzibz11afhpr9612rd3-trash-website-0.1.0.drv
+
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
 
