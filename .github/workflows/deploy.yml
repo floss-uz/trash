@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
@@ -29,11 +29,7 @@ jobs:
 
       - name: Build website
         continue-on-error: true
-        run: nix -L --print-build-logs build > build.log
-
-      - name: Show error outputs
-        continue-on-error: true
-        run: cat build.log | grep "nix log" | eval
+        run: nix --print-build-logs build
 
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
