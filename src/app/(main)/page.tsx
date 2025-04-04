@@ -91,7 +91,7 @@ export default async function Home() {
   return (
     <div className="pt-16 pb-12 sm:pb-4 lg:pt-12">
       <Container>
-        <h1 className="text-2xl/7 font-bold text-slate-900">Episodes</h1>
+        <h1 className="text-2xl/7 font-bold text-slate-900">Epizodlar</h1>
       </Container>
       <div className="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">
         {episodes.map((episode) => (
