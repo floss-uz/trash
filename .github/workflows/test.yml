@@ -17,4 +17,4 @@ jobs:
         run: nix flake check --all-systems --show-trace
 
       - name: Build website
-        run: nix build
+        run: nix --print-build-logs build
