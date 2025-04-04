@@ -121,7 +121,7 @@ export default function MainLayout({
           <AboutSection />
           <h2 className="mt-8 flex items-center font-mono text-sm/7 font-medium text-slate-900">
             <PersonIcon className="h-3 w-auto fill-slate-300" />
-            <span className="ml-2.5">Hosted by</span>
+            <span className="ml-2.5">Taqdim etishdi.</span>
           </h2>
           <div className="mt-2 flex gap-6 text-sm/7 font-bold text-slate-900">
             {hosts.map((host, hostIndex) => (
